@@ -1,4 +1,4 @@
-#include "thuvien_Ex3_CTDL.h"
+﻿#include "thuvien_Ex3_CTDL.h"
 
 void input(CL &m)
 {
@@ -68,6 +68,17 @@ void ghepMang(CL m, CL n,CL &o)
 		o.list[i + size(n)] = n.list[i];
 }
 
+void xoaPhanTuTrung(CL &m)
+{
+
+	int newSize = 0;
+	for (int i = 0; i < size(m); i++) {
+		if (i == 0 || m.list[i] != m.list[i - 1]) {
+			m.list[newSize++] = m.list[i];
+		}
+	}
+	m.n = newSize;
+}
 void sapXepTangDan(CL &m)
 {
 	for (int i = 0; i < size(m) - 1; i++)

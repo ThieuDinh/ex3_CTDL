@@ -16,6 +16,7 @@ bool isFull(CL m);
 bool kiemTraSoNguyenTo(int n);
 int viTrisSoNguyenTo(CL m);
 
+
 void ghepMang(CL m, CL n, CL &o);
 void sapXepTangDan(CL &m);
 void sapXepGiamDan(CL &m);
@@ -24,3 +25,4 @@ int timGiaTriMax(CL m);
 int timGiaTriMin(CL m);
 void nghichDao(CL &m);
 void inputSNT(CL &m);
+void xoaPhanTuTrung(CL &m);

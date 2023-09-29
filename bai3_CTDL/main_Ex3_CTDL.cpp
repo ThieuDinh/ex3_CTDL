@@ -2,8 +2,9 @@
 int main()
 {
 	CL m, n, o;
-	inputSNT(m);
+	input(m);
 	output(m);
-
+	removeDuplicates(m);
+	output(m);
 	return 0;
 }
